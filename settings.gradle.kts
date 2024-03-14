@@ -1,2 +1,2 @@
 
-rootProject.name = "kt-companion-object"
+rootProject.name = "kt-forbidden-letter"
