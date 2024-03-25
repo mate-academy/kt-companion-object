@@ -6,11 +6,7 @@ fun main() {
     println(removeLetter)
 }
 
-class LetterRemover {
-    companion object {
-        @JvmStatic
-        fun removeLetter(input: String): CharArray {
-            return input.lowercase().replace('r', '!').toCharArray()
-        }
-    }
+object LetterRemover {
+    @JvmStatic
+    fun removeLetter(input: String): CharArray = input.lowercase().replace('r', '!').toCharArray()
 }
