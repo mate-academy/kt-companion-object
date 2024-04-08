@@ -1,13 +1,10 @@
 package mate.academy
 
-object LetterRemover {
-    @JvmStatic
-    fun removeLetter(input: String): CharArray {
-        val stringToArray = CharArray(input.length)
-        val inputLower = input.lowercase()
-        for ((index, char) in inputLower.withIndex()) {
-            stringToArray[index] = if (char != 'r') char else '!'
+class LetterRemover {
+    companion object {
+        @JvmStatic
+        fun removeLetter(input: String): CharArray {
+            return input.lowercase().replace('r', '!').toCharArray()
         }
-        return stringToArray
     }
 }
