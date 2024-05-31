@@ -10,5 +10,4 @@ object LetterRemover {
         input.forEachIndexed { idx, item -> if (item in charsToReplace) result[idx] = REPLACED_WITH }
         return result
     }
-
 }
