@@ -1,7 +1,6 @@
 package mate.academy
 
 object LetterRemover {
-
     private const val REPLACED_WITH: Char = '!'
     private val charsToReplace: Set<Char> = setOf('R', 'r')
 
