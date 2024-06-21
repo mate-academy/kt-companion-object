@@ -3,10 +3,10 @@ package mate.academy
 class LetterRemover {
     companion object {
         @JvmStatic
-        fun removeLetter(input: String): Array<Char> {
+        fun removeLetter(input: String): CharArray {
             return input.lowercase()
-                .map { if (it == 'r') '!' else it }
-                .toTypedArray()
+                .replace('r', '!')
+                .toCharArray()
         }
     }
 }
