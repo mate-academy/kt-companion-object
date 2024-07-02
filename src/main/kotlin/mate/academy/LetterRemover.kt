@@ -7,5 +7,4 @@ object LetterRemover {
             .replace('r', '!')
             .toCharArray()
     }
-
 }
