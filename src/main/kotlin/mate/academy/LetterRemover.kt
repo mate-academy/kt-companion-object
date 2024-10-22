@@ -1,5 +1,11 @@
 package mate.academy
 
 class LetterRemover {
-    // implement ...
+    companion object {
+        fun removeLetter(input: String): CharArray {
+            return input.toLowerCase()
+                        .map { if (it == 'r') '!' else it }
+                        .toCharArray()
+        }
+    }
 }
