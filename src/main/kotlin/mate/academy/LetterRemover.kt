@@ -1,8 +1,7 @@
 package mate.academy
 
-class LetterRemover {
+object LetterRemover {
     // implement ...
-    companion object {
         @JvmStatic
         fun removeLetter(input: String): CharArray {
             return input
@@ -12,5 +11,4 @@ class LetterRemover {
                 }
                 .toCharArray()
         }
-    }
 }
