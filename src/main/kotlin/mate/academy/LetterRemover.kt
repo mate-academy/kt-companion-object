@@ -1,5 +1,9 @@
 package mate.academy
 
-class LetterRemover {
-    // implement ...
+class LetterRemover private constructor() {
+    companion object Remover {
+        @JvmStatic fun removeLetter(input: String) : CharArray = input.lowercase()
+            .replace("r", "!")
+            .toCharArray()
+    }
 }
