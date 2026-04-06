@@ -3,11 +3,12 @@ package mate.academy
 @Suppress("UtilityClassWithPublicConstructor")
 class LetterRemover {
     companion object {
-        fun removeLetter(input: String): Array<Char> {
+        @JvmStatic
+        fun removeLetter(input: String): CharArray {
             return input
                 .lowercase()
                 .map { if (it == 'r') '!' else it }
-                .toTypedArray()
+                .toCharArray()
         }
     }
 }
