@@ -1,15 +1,17 @@
 package mate.academy
 
-object LetterRemover {
+class LetterRemover {
 
-    @JvmStatic
-    fun removeLetter(input: String): CharArray {
-        return input.map { char ->
-            when {
-                char.lowercaseChar() == 'r' -> '!'
-                char.isLetter() -> char.lowercaseChar()
-                else -> char
-            }
-        }.toCharArray()
+    companion object {
+        @JvmStatic
+        fun removeLetter(input: String): CharArray {
+            return input.map { char ->
+                when {
+                    char.lowercaseChar() == 'r' -> '!'
+                    char.isLetter() -> char.lowercaseChar()
+                    else -> char
+                }
+            }.toCharArray()
+        }
     }
 }
