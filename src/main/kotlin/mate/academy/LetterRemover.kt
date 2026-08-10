@@ -1,5 +1,17 @@
 package mate.academy
 
-class LetterRemover {
-    // implement ...
+const val LETTER_TO_REMOVE = 'r'
+const val TARGET_SYMBOL = '!'
+
+class LetterRemover private constructor() {
+    companion object {
+        @JvmStatic
+        fun removeLetter(input: String): CharArray {
+            return input.toCharArray()
+                .map { it.lowercaseChar() }
+                .map {
+                    if (it == LETTER_TO_REMOVE) TARGET_SYMBOL else it
+                }.toCharArray()
+        }
+    }
 }
