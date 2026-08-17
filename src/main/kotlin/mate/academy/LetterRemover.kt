@@ -1,7 +1,7 @@
 package mate.academy
 
-@Suppress("UtilityClassWithPublicConstructor")
 class LetterRemover {
+
     companion object {
         @JvmStatic
         fun removeLetter(input: String): CharArray {
@@ -10,9 +10,4 @@ class LetterRemover {
             return replacedLetters.toCharArray()
         }
     }
-}
-
-fun main() {
-    val result = LetterRemover.removeLetter("flower better growing")
-    println(result.contentToString())
 }
